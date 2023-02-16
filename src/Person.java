@@ -1,29 +1,38 @@
 public class Person {
-    public String firstName;
-    public String lastName;
-    public String sex;
-    public int age;
+    private String firstName;
+    private String lastName;
+    private String sex;
+    private int age;
 
-    public Person(String firstName, String lastName, String sex, int age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.sex = sex;
-        this.age = age;
+    String  setFirstName(String firstName) {
+        return this.firstName = firstName;
     }
 
-    public String getFirstName() {
+    String setLastName(String lastName) {
+        return this.lastName = lastName;
+    }
+
+    String setSex(String sex) {
+        return this.sex = sex;
+    }
+
+    int setAge(int age) {
+        return this.age = age;
+    }
+
+    String getFirstName() {
         return firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
-    public String getSex() {
+    String getSex() {
         return sex;
     }
 
-    public int getAge() {
+    int getAge() {
         return age;
     }
 }

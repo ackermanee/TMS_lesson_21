@@ -1,5 +1,4 @@
-Alina,Rebecca,female,43
-Eugeniy,Rybac,male,12
-Eugeniy,Soloviev,male,11
-Jack,Ward,male,16
-Monica,Lopez,female,33
+alina,rudik,female,31
+andrei,bondarchik,male,53
+maksim,chernushevich,female,34
+nikita,goryachev,male,19

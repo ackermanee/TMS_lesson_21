@@ -44,11 +44,15 @@ public class Main {
         String path = new Scanner(System.in).nextLine();
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String document;
+            String[] infPerson;
             while ((document = br.readLine()) != null) {
-                String[] infPerson = document.split(",");
-                people.add(new Person(infPerson[0].trim(), infPerson[1].trim(),
-                        infPerson[2].trim(), Integer.parseInt(infPerson[3].trim())));
-                System.out.println(document);
+                infPerson = document.split(",");
+                Person per = new Person();
+                per.setFirstName(infPerson[0]);
+                per.setLastName(infPerson[1]);
+                per.setSex(infPerson[2]);
+                per.setAge(Integer.parseInt(infPerson[3]));
+                people.add(per);
             }
         } catch (FileNotFoundException ex) {
             System.err.println("Не верный путь!");
@@ -59,6 +63,9 @@ public class Main {
                 bw.write(person.getFirstName() + "," + person.getLastName() + "," +
                         person.getSex() + "," + person.getAge() + "\n");
             }
+        }
+        catch (IOException ex) {
+            throw new RuntimeException();
         }
         ageCount = (int) people.stream().filter(age -> age.getAge() > 30).count();
         System.out.println();
