@@ -48,7 +48,7 @@ public class Main {
             while ((document = br.readLine()) != null) {
                 infPerson = document.split(",");
                 Person per = new Person();
-                per.setFirstName(infPerson[0]);
+                per.setFirstName(infPerson[0].trim());
                 per.setLastName(infPerson[1]);
                 per.setSex(infPerson[2]);
                 per.setAge(Integer.parseInt(infPerson[3]));
