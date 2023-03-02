@@ -49,9 +49,9 @@ public class Main {
                 infPerson = document.split(",");
                 Person per = new Person();
                 per.setFirstName(infPerson[0].trim());
-                per.setLastName(infPerson[1]);
-                per.setSex(infPerson[2]);
-                per.setAge(Integer.parseInt(infPerson[3]));
+                per.setLastName(infPerson[1].trim());
+                per.setSex(infPerson[2].trim());
+                per.setAge(Integer.parseInt(infPerson[3].trim()));
                 people.add(per);
             }
         } catch (FileNotFoundException ex) {
