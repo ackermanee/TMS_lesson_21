@@ -4,35 +4,35 @@ public class Person {
     private String sex;
     private int age;
 
-    String  setFirstName(String firstName) {
+    protected String setFirstName(String firstName) {
         return this.firstName = firstName;
     }
 
-    String setLastName(String lastName) {
+    protected String setLastName(String lastName) {
         return this.lastName = lastName;
     }
 
-    String setSex(String sex) {
+    protected String setSex(String sex) {
         return this.sex = sex;
     }
 
-    int setAge(int age) {
+    protected int setAge(int age) {
         return this.age = age;
     }
 
-    String getFirstName() {
+    protected String getFirstName() {
         return firstName;
     }
 
-    String getLastName() {
+    protected String getLastName() {
         return lastName;
     }
 
-    String getSex() {
+    protected String getSex() {
         return sex;
     }
 
-    int getAge() {
+    protected int getAge() {
         return age;
     }
 }

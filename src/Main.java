@@ -46,12 +46,12 @@ public class Main {
             String document;
             String[] infPerson;
             while ((document = br.readLine()) != null) {
-                infPerson = document.split(",");
+                infPerson = document.trim().split(",");
                 Person per = new Person();
-                per.setFirstName(infPerson[0].trim());
-                per.setLastName(infPerson[1].trim());
-                per.setSex(infPerson[2].trim());
-                per.setAge(Integer.parseInt(infPerson[3].trim()));
+                per.setFirstName(infPerson[0]);
+                per.setLastName(infPerson[1]);
+                per.setSex(infPerson[2]);
+                per.setAge(Integer.parseInt(infPerson[3]));
                 people.add(per);
             }
         } catch (FileNotFoundException ex) {
