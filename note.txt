@@ -1,0 +1,4 @@
+alina,rudik,female,31
+andrei,bondarchik,male,53
+maksim,chernushevich,female,34
+nikita,goryachev,male,19
